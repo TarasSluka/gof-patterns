@@ -7,6 +7,12 @@
     <groupId>com.sluka.taras</groupId>
     <artifactId>gof-patterns</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.14</version>
+        </dependency>
+    </dependencies>
 
 </project>
