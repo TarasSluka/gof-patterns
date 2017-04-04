@@ -8,7 +8,7 @@ public class RunBuilder {
         TripLaptopBuilder tripLaptopBuilder = new TripLaptopBuilder();
         BuyLaptop shop = new BuyLaptop();
         shop.setLaptopBuilder(tripLaptopBuilder);
-        shop.constructBuilder("monitorResolution", "processor", "memory", "hdd", "battery");
+        shop.constructBuilder();
         Laptop laptop = shop.getLaptop();
         System.out.println(laptop.toString());
 
@@ -17,7 +17,7 @@ public class RunBuilder {
         GamingLaptopBuilder gamingLaptopBuilder = new GamingLaptopBuilder();
         BuyLaptop shop2 = new BuyLaptop();
         shop2.setLaptopBuilder(gamingLaptopBuilder);
-        shop2.constructBuilder("monitorResolution", "processor", "memory", "hdd", "battery");
+        shop2.constructBuilder();
         Laptop laptop2 = shop2.getLaptop();
         System.out.println(laptop2.toString());
     }

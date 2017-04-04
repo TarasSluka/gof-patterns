@@ -9,5 +9,4 @@ public class Laptop {
     private String memory;
     private String Hdd;
     private String battery;
-
 }

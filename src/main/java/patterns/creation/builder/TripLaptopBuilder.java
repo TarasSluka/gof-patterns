@@ -2,27 +2,27 @@ package patterns.creation.builder;
 
 public class TripLaptopBuilder extends LaptopBuilder {
     @Override
-    public void setMonitorResolution(String monitorResolution) {
-        laptop.setMonitorResolution("Trip " + monitorResolution);
+    public void setMonitorResolution() {
+        laptop.setMonitorResolution("Trip monitorResolution");
     }
 
     @Override
-    public void setProcessor(String processor) {
-        laptop.setProcessor("Trip " + processor);
+    public void setProcessor() {
+        laptop.setProcessor("Trip processor");
     }
 
     @Override
-    public void setMemory(String memory) {
-        laptop.setMemory("Trip" + memory);
+    public void setMemory() {
+        laptop.setMemory("Trip memory");
     }
 
     @Override
-    public void setHDD(String hdd) {
-        laptop.setHdd("Trip " + hdd);
+    public void setHDD() {
+        laptop.setHdd("Trip hdd");
     }
 
     @Override
-    public void setBattery(String battery) {
-        laptop.setBattery("Trip " + battery);
+    public void setBattery() {
+        laptop.setBattery("Trip battery");
     }
 }

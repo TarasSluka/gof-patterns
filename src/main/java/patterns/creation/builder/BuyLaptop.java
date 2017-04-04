@@ -4,7 +4,7 @@ public class BuyLaptop {
     private LaptopBuilder laptopBuilder;
 
     public Laptop getLaptop() {
-        return laptopBuilder.getMyLaptop();
+        return laptopBuilder.getLaptop();
     }
 
     public void setLaptopBuilder(LaptopBuilder laptopBuilder) {
@@ -12,12 +12,12 @@ public class BuyLaptop {
     }
 
 
-    public void constructBuilder(String monitorResolution, String processor, String memory, String hdd, String battery) {
+    public void constructBuilder() {
         laptopBuilder.createNewLaptop();
-        laptopBuilder.setMonitorResolution(monitorResolution);
-        laptopBuilder.setProcessor(processor);
-        laptopBuilder.setMemory(memory);
-        laptopBuilder.setHDD(hdd);
-        laptopBuilder.setBattery(battery);
+        laptopBuilder.setMonitorResolution();
+        laptopBuilder.setProcessor();
+        laptopBuilder.setMemory();
+        laptopBuilder.setHDD();
+        laptopBuilder.setBattery();
     }
 }
