@@ -2,11 +2,12 @@ package patterns.creation.singleton;
 
 public class RubSingleton {
     public static void main(String[] args) {
-        LoggerSingleton loggerSingleton;
-        for (int i = 0; i < 10; i++) {
-            loggerSingleton = LoggerSingleton.getLoggerSingleton();
-            loggerSingleton.log("" + String.valueOf(i));
-        }
+        LoggerSingleton logger;
+        logger = LoggerSingleton.getLoggerSingleton();
+        HardProcessor processor = new HardProcessor(1);
+        logger.log("Hard work started...");
+        processor.processTo(5);
+        logger.log("Hard work finished...");
 
     }
 }
